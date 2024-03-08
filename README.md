@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+Task Description :
+A simple React application that implements a timer. The app will start counting from zero and increment upwards, stopping at a user-defined number of seconds. This lab will test your skills in React state management, event handling, and basic styling using Tailwind CSS.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requirements
+Timer Input Field
 
-## Available Scripts
+Create an input field where users can enter the number of seconds for the timer.
+The input field should have the ID seconds-input and be of type number.
+Start and Stop Buttons
 
-In the project directory, you can run:
+Add two buttons to the page:
+A start button with the ID start. This button will start the timer.
+A stop button with the ID stop. This button will stop the timer.
+Ensure that only one of these buttons is enabled at any time. The start button should be enabled by default.
+Timer Display
 
-### `npm start`
+Include a div element with the ID timer to display the current timer count.
+The timer should initially display 0.
+Button Functionality
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Implement the functionality for the start and stop buttons:
+Clicking start should begin the timer and disable the start button while enabling the stop button.
+Clicking stop should pause the timer and toggle the button states back.
+Styling with Tailwind CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Style all elements on the page using Tailwind CSS.
+Center-align the input field, buttons, and timer display for a clean and organized layout.
+Example Output
+When a user enters 5 in the input field and clicks the start button, the timer display (#timer) should increment each second, showing 1, 2, 3, 4, and stopping at 5. The stop button should be clickable at any time to pause the timer.
